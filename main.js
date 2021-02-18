@@ -493,8 +493,8 @@ let fun = (arr) => {
 
 console.log(fun(letters))*/
 
-/*      // 273
-let letters = ['a', 's', 'x', 'g', 's', 'a', 'y', 's',];
+      // 273
+/*let letters = ['a', 's', 'x', 'g', 's', 'a', 'y', 's',];
 
 let fun = (arr) => {
  return    arr.reduce((acc, item, index) => {
@@ -504,9 +504,9 @@ let fun = (arr) => {
        return acc;
     }, 0)
 }
-console.log(fun(letters))*/
+console.log(fun(letters))
 
-/*   // 278
+   // 278
 let letters = ['f', 'x', 'r', 'f', 'y'];
 
 let fun = (arr) => {
@@ -717,19 +717,19 @@ const jivaro = noname.bind(v, 'manukyan', 22);*/
 
 
 //      724
-/*const studs = [
+const studs = [
     {name: 'varo', lastname: 'manukyan', absence: 3},
     {name: 'tikov', lastname: 'manukyan', absence: 9},
     {name: 'toffee', lastname: 'manukyan', absence: 8},
 ]
 
 let fun = (arr) => {
-    return  [...arr].sort((a,b) => a.absence - b.absence)[arr.length - 1]
+    return  Object.values([...arr].sort((a,b) => a.absence - b.absence)[arr.length - 1]);
 }
-console.log(fun(studs))*/
+console.log(fun(studs))
 
-/*
-const mostAbsent = (arr) => {
+
+/*const mostAbsent = (arr) => {
     let max = {absence: 0};
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].absence > max.absence )
@@ -739,12 +739,12 @@ const mostAbsent = (arr) => {
 }
 
 console.log(mostAbsent(studs))*/
-/**/
 
 
-/*
 
-const studs = [
+
+       // 725
+/*const studs = [
     {name: 'varo', lastname: 'manukyan', rating: 3},
     {name: 'tikov', lastname: 'manukyan', rating: 6},
     {name: 'toffee', lastname: 'manukyan', rating: 8},
@@ -754,4 +754,68 @@ const average = (arr) => {
     const x = arr.reduce((acc, student) => acc += student.rating / arr.length, 0);
     return   arr.filter((stud) => stud.rating > x );
 }
-console.log(average(studs))*/
+console.log(average(studs))/*/
+
+/*       // 726
+const studs = [
+    {name: 'varo', lastname: 'manukyan', rating: 8},
+    {name: 'tikov', lastname: 'manukyan', rating: 16},
+    {name: 'toffee', lastname: 'manukyan', rating: 19},
+];
+
+const positiveRating = (arr) => {
+   return  arr.filter((item) => item.rating > 10)
+}
+
+console.log(positiveRating(studs));*/
+
+     // 727
+/*const studs = [
+    {lastname: 'manukyan', number: '18', rating: 8},
+    {lastname: 'manukyan', number: '4', rating: -3},
+    {lastname: 'manukyan', number: '20', rating: 15},
+];
+
+
+let num = (arr) => {
+  return   arr.filter((item) => item.rating < 10)
+}
+
+console.log(num(studs));*/
+
+
+/*        // 728
+const studs = [
+    {lastName: 'manukyan', name: 'tikov', married: 1, kids: 2},
+    {lastName: 'hakobyan', name: 'varov', married: 1, kids: 4},
+    {lastName: 'sahakyan', name: 'toffee', married: 0, kids: 0},
+];
+
+let fun = (arr) => {
+   return  arr.filter((item) => item.married === 1 && item.kids > 0)
+}
+console.log(fun(studs))*/
+
+
+    // 729
+/*const studs = [
+    {name: 'tikov', kids: 2},
+    {name: 'varov', kids: 1},
+    {name: 'toffee', kids: 0},
+];
+
+function fun (arr) {
+   return  arr.reduce((acc, item) => {
+        if (item.kids > 0) {
+            acc.push(item.name)
+        }
+        return acc;
+    }, [])
+}
+console.log(fun(studs))*/
+
+
+
+
+
+
