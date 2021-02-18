@@ -717,6 +717,7 @@ const jivaro = noname.bind(v, 'manukyan', 22);*/
 
 
 //      724
+/*
 const studs = [
     {name: 'varo', lastname: 'manukyan', absence: 3},
     {name: 'tikov', lastname: 'manukyan', absence: 9},
@@ -724,9 +725,11 @@ const studs = [
 ]
 
 let fun = (arr) => {
-    return  Object.values([...arr].sort((a,b) => a.absence - b.absence)[arr.length - 1]);
+    const { name, lastname } = [...arr].sort((a,b) => a.absence - b.absence)[arr.length - 1];
+    return { name, lastname };
 }
 console.log(fun(studs))
+*/
 
 
 /*const mostAbsent = (arr) => {
@@ -816,6 +819,19 @@ console.log(fun(studs))*/
 
 
 
+
+/*Array.prototype.forBeach = function (callback, self) {
+    for (let i = 0; i < this.length; i++) {
+        callback.apply(self, [this[i], i, this])
+    }
+}
+
+
+const arr = ['varo', 'tiko'];
+
+arr.forBeach(function (item, index, array) {
+
+}, {a: 'a'})*/
 
 
 
