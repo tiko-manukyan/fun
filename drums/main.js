@@ -14,7 +14,7 @@ document.addEventListener('keyup', (event) => {
     const { keyCode } = event;
     const div = document.querySelector(`[data-key='${keyCode}']`);
     if (div) {
-        div.classList.remove('playing');a
+        div.classList.remove('playing');
     }
 })
 
