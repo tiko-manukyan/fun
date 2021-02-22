@@ -841,17 +841,43 @@ function sal(arr, G) {
 
 console.log(sal(studs, 1000));*/
 
+/*       //     732
+const studs = [
+    {name: 'Varazdat', lastName: 'Manukyan', family: 4, salary: 50000},
+    {name: 'Tigran', lastName: 'Manukyan', family: 3, salary: 30000},
+    {name: 'Toffee', lastName: 'Manukyanc', family: 6, salary: 40000},
+    {name: 'Lusik', lastName: 'Ohanjanyan', family: 7, salary: 60000},
+];
 
 
+function searchLetter(arr) {
+   return  arr.filter((person) => person.lastName.startsWith('M') && person.lastName.endsWith('n'))
+       .map((person) => `${person.lastName} ${person.name}`);
+}
+console.log(searchLetter(studs))*/
 
 
+const studs = [
+    {name: 'Varazdat', lastName: 'Manukyan', currentRating: 12, finalRating: 12},
+    {name: 'Tigran', lastName: 'Manukyan', currentRating: 16, finalRating: 17},
+    {name: 'Toffee', lastName: 'Manukyanc', currentRating: 10, finalRating: 19},
+    {name: 'Lusik', lastName: 'Ohanjanyan', currentRating: 14, finalRating: 16},
+];
 
-
-
-
-
-
-
+function strudents(arr) {
+    return arr.reduce((acc, person) => {
+      const total = person.currentRating + person.finalRating;
+        if (total > 30 && total < 36) {
+             acc.excellent.push(`${person.lastName} ${person.name}`);
+        } else if (total > 24 && total < 31) {
+             acc.good.push(`${person.lastName} ${person.name}`)
+        } else if (total > 18 && total < 25) {
+             acc.enough.push(`${person.lastName} ${person.name}`);
+        }
+        return acc;
+    }, {excellent: [], good: [], enough: [],});
+}
+console.log(strudents(studs));
 
 
 
