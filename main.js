@@ -857,6 +857,7 @@ function searchLetter(arr) {
 console.log(searchLetter(studs))*/
 
 
+/*      //    733
 const studs = [
     {name: 'Varazdat', lastName: 'Manukyan', currentRating: 12, finalRating: 12},
     {name: 'Tigran', lastName: 'Manukyan', currentRating: 16, finalRating: 17},
@@ -877,12 +878,64 @@ function strudents(arr) {
         return acc;
     }, {excellent: [], good: [], enough: [],});
 }
-console.log(strudents(studs));
+console.log(strudents(studs));*/
 
 
+/*   ///     734
+const studs = [
+    {kidQuantity: 3, averageSalary: 5000},
+    {kidQuantity: 0, averageSalary: 6000},
+    {kidQuantity: 2, averageSalary: 10000},
+    {kidQuantity: 3, averageSalary: 7000},
+];
 
+function sum(arr, A) {
+  return  arr.filter((item) => item.averageSalary > A)
+      .reduce((acc, item) => {
+          acc += item.kidQuantity;
+          return acc;
+      }, 0)
+}
+console.log(sum(studs, 6000));*/
 
+    // 735
+/*const studs = [
+    {name: 'Toffee', currentRating: 12, finalRating: 19},
+    {name: 'Varo', currentRating: 16, finalRating: 17},
+    {name: 'Tikov', currentRating: 10, finalRating: 19},
+    {name: 'Lusik', currentRating: 14, finalRating: 16},
+];
 
+function num(arr, K) {
+   return  arr.reduce((acc, item) => {
+        if (Math.abs(item.currentRating - item.finalRating) < K) {
+            acc.push(item);
+        }
+        return acc;
+    }, [])
+
+}
+console.log(num(studs, 2))*/
+
+/*    // 737
+const studs = [
+    {name: 'Tigran', salary: 4000, rating: 19},
+    {name: 'Varo', salary: 3500, rating: 17},
+    {name: 'Lusik', salary: 6000, rating: 19},
+    {name: 'Toffee', salary: 5000, rating: 16},
+];
+
+function fun(arr, k) {
+    let result = 0;
+    arr.forEach((it) =>result += it.rating / arr.length);
+    if (result > k) {
+        return arr.map((stud) => ({ ...stud, salary: stud.salary * 2}))
+    }
+    return arr;
+
+}
+
+console.log(fun(studs, 20))*/
 
 
 
