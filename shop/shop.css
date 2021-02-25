@@ -28,7 +28,37 @@ nav span:not(:first-child) {
 }
 
 h1 {
-    font: 65px alice, serif;
-    margin-left: 13%;
-    margin-top: 11px;
+    font-size: 65px;
+    margin: 30px 0 30px 0;
+}
+
+.section {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+.product {
+    width: 300px;
+}
+
+.product img {
+    width: 280px;
+    height: 260px;
+}
+
+.product p {
+    margin: 15px 0;
+    height: 35px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slides {
+    display: flex;
+    justify-content: space-between;
 }

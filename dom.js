@@ -27,3 +27,23 @@
 //     console.log(e, 'e')
 //     e.target.style.fontSize = '16px'
 // })
+
+
+// const getAllProducts = () => {
+//     fetch('https://fakestoreapi.com/prasdfoducts')
+//         .then(res => console.log(res))
+// }
+//
+//
+//
+// getAllProducts();
+
+// const getAllProducts = async () => {
+//     let response = await fetch('https://fakestoreapi.com/products');
+//     response = await response.json();
+//     console.log(response)
+// }
+//
+//
+//
+// getAllProducts();
