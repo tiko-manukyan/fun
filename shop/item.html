@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="shop.css" type="text/css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="links">
+                <span>HOME</span>
+                <span>ABOUT US</span>
+                <span>GIFT REGISTRY</span>
+                <span>CONTACT US</span>
+                <span>BLOG</span>
+            </div>
+
+        </nav>
+        <div class="herbaimage slides">
+            <img src="herba_logo.webp">
+            <div style="margin-right: 30px">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div>
+            <img class="productimage"
+                 id="image"
+                >
+        </div>
+        <div class="detail">
+            <h2 id="title">Product Title</h2>
+            <h3 class="mt">Your Price: $<span id="price"></span></h3>
+            <p class="mt"><b>Category:</b> <span id="category"></span></p>
+            <p class="mt"><b>Description:</b> <span id="description"></span></p>
+            <button onclick="addToCart()" class="mt"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+        </div>
+    </div>
+    <script src="item.js"></script>
+</body>
+</html>
