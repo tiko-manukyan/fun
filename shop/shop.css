@@ -178,21 +178,55 @@ hr {
     margin-right: 10%;
 }
 
-.shoplist {
-    border-bottom: 1px solid black;
+th {
+    /*width: 200px;*/
+
+}
+
+table {
+    margin-top: 20px;
     margin-left: 10%;
+    width: 80%;
     margin-right: 10%;
-    display: flex;
-    padding: 15px;
-    width: 37%;
-    border-top: 1px solid black;
-    margin-top: 35px;
-    font-weight: bold;
 }
 
-.shoplist span {
-    margin-left: 20%;
+th:first-child {
+    text-align: left;
 }
 
+th:last-child {
+    text-align: end;
+}
 
+td img {
+    height: 100px;
+    width: 90px;
+}
 
+td div {
+    display: inline-block;
+}
+
+.cart-info {
+    vertical-align: middle;
+    height: 120px;
+    margin-left: 10px;
+}
+
+td:not(:first-child) {
+    text-align: center;
+}
+
+input[type=number] {
+    width: 61px;
+    height: 30px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+.total {
+    margin-top: 20px;
+    margin-left: 10%;
+}
