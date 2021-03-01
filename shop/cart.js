@@ -10,7 +10,9 @@ const clearHtml = () => {
 const fun = () => {
     clearHtml();
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let total = 0;
     cart.map((product, index) => {
+        total += +product.price;
         const tr = document.createElement('tr');
         tr.classList.add('product-row')
         tr.innerHTML = ` <td>
@@ -28,6 +30,7 @@ const fun = () => {
         <td>$${product.price}</td>`;
         body.append(tr);
     });
+    document.getElementById('total').innerHTML = total;
 }
 
 fun();
